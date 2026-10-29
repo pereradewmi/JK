@@ -1,205 +1,44 @@
-# Artist Portfolio Website
+# Janiru Kavinda — Artist Website
 
-A modern, responsive, and visually immersive personal portfolio website designed for a young music artist.
+A cinematic, responsive artist website built with semantic HTML, SCSS, and vanilla JavaScript. The project is static and needs no framework, backend, or build step to run.
 
-The website provides a digital platform to showcase the artist's identity, musical work, performances, events, photography, achievements, and professional contact information.
+## Run locally
 
-## Overview
+Open `index.html` in a browser, or serve the project directory with any static web server. The site uses Google Fonts and temporary Unsplash photography, so those resources need an internet connection.
 
-This project focuses on creating a premium digital presence for a music artist through a contemporary user interface, cinematic visuals, bold typography, and smooth interactions.
+## Project structure
 
-The design follows a dark editorial aesthetic with a minimal layout and vibrant accent elements to create a distinctive and memorable user experience.
-
-## Features
-
-* Modern and responsive landing page
-* Artist introduction and biography
-* Featured music section
-* Music and performance showcase
-* Video presentation section
-* Photography gallery
-* Upcoming events
-* Social media integration
-* Professional booking and contact section
-* Responsive mobile navigation
-* Smooth scrolling
-* Interactive hover effects
-* Scroll-based reveal animations
-* Mobile, tablet, and desktop support
-
-## Technologies
-
-| Technology   | Purpose                               |
-| ------------ | ------------------------------------- |
-| HTML5        | Website structure                     |
-| SCSS         | Modular styling and design            |
-| CSS3         | Responsive layouts and visual effects |
-| JavaScript   | Interactions and animations           |
-| Remix Icon   | Interface icons                       |
-| Google Fonts | Typography                            |
-
-## Design & UI
-
-The interface is built around a modern editorial and cinematic visual language.
-
-### Design principles
-
-* Dark minimal interface
-* Bold typography
-* High-quality photography
-* Strong visual hierarchy
-* Generous whitespace
-* Subtle borders and transitions
-* Modern accent color
-* Responsive grid layouts
-* Smooth micro-interactions
-
-
-
-## Getting Started
-
-### Clone the repository
-
-```bash
-git clone https://github.com/yourusername/artist-portfolio.git
+```text
+index.html       Page content and semantic sections
+assets/images/   Approved portraits, photography, and release artwork
+assets/video/    Official video posters and approved clips
+scss/style.scss  Source styles and responsive design
+css/style.css    Compiled stylesheet loaded by the page
+js/main.js       Navigation, motion, gallery, and page interactions
 ```
 
-### Navigate to the project
-
-```bash
-cd artist-portfolio
-```
-
-### Run the project
-
-Open `index.html` in a modern web browser.
-
-No backend or database is required for the current version.
-
-## SCSS Development
-
-The project uses SCSS as the primary styling source.
-
-Install Sass globally:
+After editing SCSS, compile the stylesheet with Dart Sass:
 
 ```bash
 npm install -g sass
-```
-
-Compile the SCSS file:
-
-```bash
 sass scss/style.scss css/style.css
 ```
 
-For development with automatic compilation:
+## Replace the placeholders
 
-```bash
-sass --watch scss/style.scss:css/style.css
-```
+The artist bio, release titles and dates, official video thumbnail, press photos, public dates, and booking contact are deliberately identified as placeholders. Publish only details and media approved by the artist; the page does not claim unverified awards, milestones, or performances.
 
-## Customization
+- Replace the marked Unsplash images with approved artist photography, artwork, and video stills. Update their alt text when replacing them.
+- Store approved local media in `assets/images/` or `assets/video/` and update the corresponding image sources in `index.html`.
+- Add confirmed releases and credits to the sound archive. The streaming links currently open searches for Janiru Kavinda, not artist-owned release pages.
+- Add official public events only after dates, venues, and ticket links are confirmed.
+- Replace the booking-contact placeholder with a verified management email. The button is intentionally disabled until that information is available.
+- Update the artist biography and milestones with approved, accurate information.
 
-The website can easily be customized for a specific artist.
+## Motion and accessibility
 
-### Artist Information
+Scroll reveals use the browser's IntersectionObserver API and CSS, with no animation-library CDN required. The responsive navigation supports keyboard dismissal; the visual gallery opens images in a native dialog. Reduced-motion preferences disable animations, and the custom cursor is decorative only: the native pointer remains available.
 
-Update the content in:
+## Deployment
 
-```text
-index.html
-```
-
-### Styling
-
-Modify:
-
-```text
-scss/style.scss
-```
-
-### Images
-
-Replace the images inside:
-
-```text
-images/
-```
-
-### Social Media
-
-Update the social media links in the navigation, hero section, and contact section.
-
-### Music
-
-Replace the sample music information and connect the buttons to platforms such as Spotify, Apple Music, YouTube, or an external music player.
-
-## Responsive Design
-
-The website has been designed to provide a consistent experience across different screen sizes.
-
-Supported layouts include:
-
-* Desktop
-* Laptop
-* Tablet
-* Mobile
-
-Responsive breakpoints are managed through SCSS media queries.
-
-## Future Enhancements
-
-Potential future development includes:
-
-* Online music player
-* Spotify integration
-* YouTube integration
-* Apple Music integration
-* Dynamic event management
-* Working contact form
-* Newsletter subscription
-* Artist news/blog
-* Multilingual support
-* Content management system
-* Admin dashboard
-* Laravel backend
-* MySQL database
-* Online booking system
-* Performance analytics
-
-## Development
-
-This project is structured to allow the static frontend to be extended into a full-stack application in the future.
-
-The current frontend can be integrated with technologies such as:
-
-```text
-Frontend
-HTML + SCSS + JavaScript
-
-Backend
-Laravel / PHP
-
-Database
-MySQL
-
-Hosting
-Shared Hosting / VPS / Cloud
-```
-
-## Author
-
-**Dewmi Perera**
-
-Software Developer
-Sri Lanka
-
-## License
-
-This project is intended for personal and portfolio use.
-
-You may modify and adapt the source code for your own projects. Please ensure that any third-party assets, images, fonts, or media used in the final website comply with their respective licenses.
-
----
-
-⭐ If you find this project useful, consider giving the repository a star.
+Deploy `index.html`, `css/`, `js/`, and `scss/` to any static host. No compilation is required at deployment time when the compiled `css/style.css` is up to date.

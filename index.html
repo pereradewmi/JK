@@ -3,758 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090909">
+    <meta name="description" content="The official artist space for Janiru Kavinda. Music, visuals, artist story and booking information.">
+    <title>Janiru Kavinda — Artist / Sri Lanka</title>
 
-    <title>Artist Name | Singer & Performer</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-
-    <!-- Remix Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Compiled CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading page" hidden>
+        <span class="page-loader-logo" aria-hidden="true">JK<span>.</span></span>
+        <span class="page-loader-label">Preparing your experience</span>
+        <span class="page-loader-track" aria-hidden="true"><span></span></span>
+    </div>
 
-<!-- ================= NAVBAR ================= -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="header">
+    <header class="header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Janiru Kavinda home">JK<span class="logo-dot">.</span></a>
 
-    <nav class="navbar container">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
 
-        <a href="#" class="logo">
-            <span>AR.</span>
-        </a>
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#music">Music</a>
+                <a class="nav-link" href="#visuals">Visuals</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#live">Events</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-contact" href="#music">Enter the world <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
 
-        <div class="nav-menu" id="navMenu">
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-image-wrap">
+                <img
+                    class="hero-image"
+                    src="assets/images/hero.png"
+                    alt="Janiru Kavinda"
+                    fetchpriority="high"
+                    decoding="async">
+            </div>
+            <div class="hero-shade"></div>
+            <div class="hero-grain" aria-hidden="true"></div>
 
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#music" class="nav-link">Music</a>
-            <a href="#videos" class="nav-link">Videos</a>
-            <a href="#gallery" class="nav-link">Gallery</a>
-            <a href="#events" class="nav-link">Events</a>
+            <div class="hero-content container">
+                <p class="hero-kicker">A voice beyond boundaries</p>
+                <h1 id="hero-title" class="hero-title" aria-label="Janiru Kavinda">
+                    <span class="hero-title-line">JANIRU</span>
+                    <span class="hero-title-line hero-title-last">KAVINDA<span class="hero-period">.</span></span>
+                </h1>
+                <div class="hero-bottom">
+                    <p class="hero-note">A space for the sound,<br>the story and everything between.</p>
+                    <a class="hero-cta" href="#music">
+                        <span class="hero-cta-icon" aria-hidden="true">↓</span>
+                        <span>Enter the world</span>
+                    </a>
+                    <span class="hero-image-note">Janiru Kavinda · Sri Lanka</span>
+                </div>
+            </div>
 
-            <a href="#contact" class="nav-contact">
-                Book Me <i class="ri-arrow-right-up-line"></i>
+            <a class="scroll-cue" href="#music" aria-label="Scroll to music">
+                <span>Scroll to discover</span>
+                <span class="scroll-cue-line" aria-hidden="true"></span>
             </a>
+            <span class="hero-side-label" aria-hidden="true">JANIRU KAVINDA — ARTIST / SRI LANKA</span>
+        </section>
 
-        </div>
-
-        <button class="menu-btn" id="menuBtn">
-            <i class="ri-menu-4-line"></i>
-        </button>
-
-    </nav>
-
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<main>
-
-<section class="hero" id="home">
-
-    <div class="hero-bg"></div>
-
-    <div class="hero-content container">
-
-        <div class="hero-text">
-
-            <div class="hero-tag">
-                <span class="pulse"></span>
-                Sri Lankan Singer & Performer
+        <div class="ticker" aria-label="Janiru Kavinda, artist from Sri Lanka">
+            <div class="ticker-track" aria-hidden="true">
+                <span>JANIRU KAVINDA</span><i>✳</i><span>VOICETEENS SEASON 3 WINNER</span><i>✳</i><span>MUSIC WITHOUT BORDERS</span><i>✳</i>
+                <span>JANIRU KAVINDA</span><i>✳</i><span>VOICETEENS SEASON 3 WINNER</span><i>✳</i><span>MUSIC WITHOUT BORDERS</span><i>✳</i>
             </div>
-
-            <h1>
-                Music is my
-                <span>language.</span>
-            </h1>
-
-            <p>
-                Voice Teen Sri Lanka Winner
-                <br>
-                Singer • Performer • Artist
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#music" class="btn btn-primary">
-                    Listen Now
-                    <i class="ri-play-fill"></i>
-                </a>
-
-                <a href="#about" class="btn btn-outline">
-                    Discover My Story
-                </a>
-
-            </div>
-
-            <div class="hero-social">
-
-                <a href="#">
-                    <i class="ri-instagram-line"></i>
-                </a>
-
-                <a href="#">
-                    <i class="ri-youtube-line"></i>
-                </a>
-
-                <a href="#">
-                    <i class="ri-tiktok-line"></i>
-                </a>
-
-                <a href="#">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-
-            </div>
-
         </div>
 
-        <div class="hero-image">
-
-            <div class="image-circle"></div>
-
-            <!-- Replace with artist image -->
-            <img src="images/artist-hero.png"
-                 alt="Artist">
-
-            <div class="winner-badge">
-
-                <span>WINNER</span>
-
-                <strong>
-                    VOICE TEEN
-                </strong>
-
-                <small>
-                    SRI LANKA
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="scroll-down">
-        <span>Scroll to explore</span>
-        <i class="ri-arrow-down-line"></i>
-    </div>
-
-</section>
-
-
-<!-- ================= ACHIEVEMENT ================= -->
-
-<section class="achievement">
-
-    <div class="container achievement-grid">
-
-        <div class="achievement-item">
-
-            <span class="achievement-number">
-                01
-            </span>
-
-            <div>
-                <h3>Voice Teen</h3>
-                <p>Winner — Sri Lanka</p>
-            </div>
-
-        </div>
-
-        <div class="achievement-item">
-
-            <span class="achievement-number">
-                10+
-            </span>
-
-            <div>
-                <h3>Live Shows</h3>
-                <p>Performances</p>
-            </div>
-
-        </div>
-
-        <div class="achievement-item">
-
-            <span class="achievement-number">
-                05+
-            </span>
-
-            <div>
-                <h3>Originals</h3>
-                <p>Music Releases</p>
-            </div>
-
-        </div>
-
-        <div class="achievement-item">
-
-            <span class="achievement-number">
-                50K+
-            </span>
-
-            <div>
-                <h3>Listeners</h3>
-                <p>And growing</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about section" id="about">
-
-    <div class="container about-grid">
-
-        <div class="section-label">
-            <span>01</span>
-            About The Artist
-        </div>
-
-        <div class="about-content">
-
-            <h2>
-                A voice that
-                <em>connects.</em>
-            </h2>
-
-            <p class="large-text">
-                From a young dreamer with a passion for music
-                to becoming the winner of Voice Teen Sri Lanka,
-                every note has been part of an unforgettable journey.
-            </p>
-
-            <p>
-                Music isn't simply something I perform.
-                It is how I express emotions, tell stories and
-                connect with people. My journey continues with
-                new songs, new stages and new dreams.
-            </p>
-
-            <a href="#contact" class="text-link">
-                Work with me
-                <i class="ri-arrow-right-line"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FEATURED MUSIC ================= -->
-
-<section class="music section" id="music">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-                <span class="eyebrow">02 — MUSIC</span>
-
-                <h2>
-                    Featured
-                    <em>sounds.</em>
-                </h2>
-            </div>
-
-            <a href="#" class="text-link">
-                View all music
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-        </div>
-
-
-        <div class="music-grid">
-
-            <!-- MUSIC CARD -->
-
-            <article class="music-card">
-
-                <div class="music-cover">
-
-                    <img src="images/song-01.jpg"
-                         alt="Song">
-
-                    <button class="play-btn">
-                        <i class="ri-play-fill"></i>
-                    </button>
-
-                    <span class="music-type">
-                        SINGLE
-                    </span>
-
+        <section class="release section" id="music" aria-labelledby="release-title">
+            <div class="section-shell">
+                <div class="section-head reveal">
+                    <span class="section-index">01 / THE SOUND</span>
+                    <span class="section-aside">A living archive</span>
                 </div>
 
-                <div class="music-info">
-
-                    <div>
-
-                        <span class="song-year">
-                            2026
-                        </span>
-
-                        <h3>My First Song</h3>
-
-                        <p>
-                            Original Single
-                        </p>
-
+                <div class="release-layout">
+                    <div class="release-artwork reveal">
+                        <img
+                            src="assets/images/image.png"
+                            alt="Temporary recording studio image used for release artwork placeholder"
+                            loading="lazy"
+                            decoding="async">
+                        <div class="artwork-wash"></div>
+                        <span class="artwork-mark">JK<br>001</span>
+                        <span class="artwork-caption">ARTWORK PLACEHOLDER<br>Replace with approved release cover</span>
+                        <span class="artwork-orbit" aria-hidden="true"></span>
                     </div>
 
-                    <a href="#">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- MUSIC CARD -->
-
-            <article class="music-card">
-
-                <div class="music-cover">
-
-                    <img src="images/song-02.jpg"
-                         alt="Song">
-
-                    <button class="play-btn">
-                        <i class="ri-play-fill"></i>
-                    </button>
-
-                    <span class="music-type">
-                        LIVE
-                    </span>
-
-                </div>
-
-                <div class="music-info">
-
-                    <div>
-
-                        <span class="song-year">
-                            2026
-                        </span>
-
-                        <h3>Voice Teen Finale</h3>
-
-                        <p>
-                            Live Performance
-                        </p>
-
+                    <div class="release-copy reveal">
+                        <span class="eyebrow"><i aria-hidden="true"></i> THE NEXT CHAPTER</span>
+                        <h2 id="release-title">A sound<br>still <em>unfolding.</em></h2>
+                        <p class="release-description">The latest release, cover art and credits will appear here when the official music details are ready.</p>
+                        <div class="release-meta">
+                            <span>RELEASE TITLE <strong>To be announced</strong></span>
+                            <span>RELEASE DATE <strong>To be announced</strong></span>
+                        </div>
+                        <div class="platform-links" aria-label="Find Janiru Kavinda on music platforms">
+                            <a href="https://open.spotify.com/search/Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">Spotify <span aria-hidden="true">↗</span></a>
+                            <a href="https://music.youtube.com/search?q=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">YouTube Music <span aria-hidden="true">↗</span></a>
+                            <a href="https://music.apple.com/search?term=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">Apple Music <span aria-hidden="true">↗</span></a>
+                        </div>
                     </div>
-
-                    <a href="#">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-
                 </div>
 
-            </article>
+            </div>
+        </section>
 
-
-            <!-- MUSIC CARD -->
-
-            <article class="music-card">
-
-                <div class="music-cover">
-
-                    <img src="images/song-03.jpg"
-                         alt="Song">
-
-                    <button class="play-btn">
-                        <i class="ri-play-fill"></i>
+        <section class="visuals section" id="visuals" aria-labelledby="visuals-title">
+            <div class="section-shell">
+                <div class="section-head reveal">
+                    <span class="section-index">02 / THE VISUALS</span>
+                    <span class="section-aside">A collection in progress</span>
+                </div>
+                <div class="visuals-heading reveal">
+                    <h2 id="visuals-title">Frames from<br><em>the feeling.</em></h2>
+                    <p>Temporary imagery. Replace with approved artist portraits, music-film stills and behind-the-scenes photographs.</p>
+                </div>
+                <div class="visual-grid">
+                    <button class="visual-item visual-tall reveal" type="button" data-lightbox data-caption="Temporary concert crowd visual">
+                        <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1300&q=85" alt="Temporary concert crowd visual" loading="lazy" decoding="async">
+                        <span class="visual-index">FRAME 01 <i>↗</i></span>
                     </button>
-
-                    <span class="music-type">
-                        COVER
-                    </span>
-
+                    <button class="visual-item visual-offset reveal" type="button" data-lightbox data-caption="Temporary recording session visual">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85" alt="Temporary recording session visual" loading="lazy" decoding="async">
+                        <span class="visual-index">FRAME 02 <i>↗</i></span>
+                    </button>
+                    <button class="visual-item reveal" type="button" data-lightbox data-caption="Temporary live music visual">
+                        <img src="https://images.unsplash.com/photo-1524650359799-842906ca1c06?auto=format&fit=crop&w=1000&q=85" alt="Temporary live music visual" loading="lazy" decoding="async">
+                        <span class="visual-index">FRAME 03 <i>↗</i></span>
+                    </button>
+                    <button class="visual-item visual-wide reveal" type="button" data-lightbox data-caption="Temporary audience and stage visual">
+                        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1800&q=85" alt="Temporary audience and stage visual" loading="lazy" decoding="async">
+                        <span class="visual-index">FRAME 04 <i>↗</i></span>
+                    </button>
                 </div>
+            </div>
+        </section>
 
-                <div class="music-info">
-
-                    <div>
-
-                        <span class="song-year">
-                            2025
-                        </span>
-
-                        <h3>Acoustic Sessions</h3>
-
-                        <p>
-                            Acoustic Cover
-                        </p>
-
+        <section class="story section" id="about" aria-labelledby="story-title">
+            <div class="section-shell">
+                <div class="section-head reveal">
+                    <span class="section-index">03 / THE STORY</span>
+                    <span class="section-aside">The person behind the voice</span>
+                </div>
+                <div class="story-grid">
+                    <div class="story-image reveal">
+                        <img
+                            src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=1200&q=85"
+                            alt="Temporary musician portrait placeholder; replace with an approved Janiru Kavinda portrait"
+                            loading="lazy"
+                            decoding="async">
+                        <span>PORTRAIT PLACEHOLDER · APPROVED ARTIST PHOTO TO COME</span>
                     </div>
-
-                    <a href="#">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-
+                    <div class="story-copy reveal">
+                        <span class="eyebrow">JANIRU KAVINDA / SRI LANKA</span>
+                        <h2 id="story-title">Every voice<br>has a <em>beginning.</em></h2>
+                        <p class="story-lead">The story is still being written. This space is reserved for Janiru's own words.</p>
+                        <p class="story-placeholder">Add an approved first-person biography, musical influences and personal journey here. No career milestones or personal details are published until confirmed by the artist.</p>
+                        <a class="text-link" href="#contact">Share your story <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= VIDEO ================= -->
-
-<section class="videos section" id="videos">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span class="eyebrow">
-                    03 — PERFORMANCE
-                </span>
-
-                <h2>
-                    On the
-                    <em>stage.</em>
-                </h2>
-
+                <!-- <div class="milestones">
+                    <div class="milestone reveal"><span>01</span><p><strong>The beginning</strong><small>Artist biography to be added</small></p><i aria-hidden="true">↗</i></div>
+                    <div class="milestone reveal"><span>02</span><p><strong>The music</strong><small>Verified releases & credits to be added</small></p><i aria-hidden="true">↗</i></div>
+                    <div class="milestone reveal"><span>03</span><p><strong>The journey</strong><small>Confirmed career milestones to be added</small></p><i aria-hidden="true">↗</i></div>
+                </div> -->
             </div>
+        </section>
 
-        </div>
-
-
-        <div class="video-feature">
-
-            <div class="video-image">
-
-                <img src="images/performance.jpg"
-                     alt="Live Performance">
-
-                <div class="video-overlay"></div>
-
-                <a href="#" class="video-play">
-                    <i class="ri-play-fill"></i>
-                </a>
-
-                <div class="video-caption">
-
-                    <span>LIVE PERFORMANCE</span>
-
-                    <h3>
-                        Voice Teen Sri Lanka
-                        Grand Finale
-                    </h3>
-
+        <section class="live section" id="live" aria-labelledby="live-title">
+            <div class="section-shell">
+                <div class="section-head reveal">
+                    <span class="section-index">04 / UPCOMING EVENTS</span>
+                    <span class="section-aside">Sri Lanka / Worldwide</span>
                 </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= GALLERY ================= -->
-
-<section class="gallery section" id="gallery">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span class="eyebrow">
-                    04 — GALLERY
-                </span>
-
-                <h2>
-                    Moments &
-                    <em>memories.</em>
-                </h2>
-
-            </div>
-
-            <a href="#" class="text-link">
-                Instagram
-                <i class="ri-instagram-line"></i>
-            </a>
-
-        </div>
-
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item gallery-large">
-                <img src="images/gallery-01.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/gallery-02.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/gallery-03.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/gallery-04.jpg" alt="">
-            </div>
-
-            <div class="gallery-item gallery-wide">
-                <img src="images/gallery-05.jpg" alt="">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= EVENTS ================= -->
-
-<section class="events section" id="events">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span class="eyebrow">
-                    05 — EVENTS
-                </span>
-
-                <h2>
-                    Catch me
-                    <em>live.</em>
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="events-list">
-
-            <div class="event">
-
-                <div class="event-date">
-
-                    <strong>18</strong>
-                    <span>OCT</span>
-
+                <div class="events-intro reveal">
+                    <div>
+                        <span class="eyebrow"><i aria-hidden="true"></i> ON STAGE / LIVE DATES</span>
+                        <h2 id="live-title">Find your<br><em>next show.</em></h2>
+                    </div>
+                    <p>Event posters, dates and ticket details will be added here as shows are announced.</p>
                 </div>
-
-                <div class="event-info">
-
-                    <span>LIVE CONCERT</span>
-
-                    <h3>
-                        Colombo Music Festival
-                    </h3>
-
-                    <p>
-                        BMICH, Colombo
-                    </p>
-
+                <div class="event-poster-grid">
+                    <article class="event-poster-card reveal">
+                        <div class="event-poster-art">
+                            <img src="assets/images/image.png" alt="Janiru Kavinda performing, poster image placeholder" loading="lazy" decoding="async">
+                            <span class="event-poster-shade"></span>
+                            <span class="event-poster-label">UPCOMING EVENT</span>
+                            <div class="event-poster-copy">
+                                <span>JANIRU KAVINDA</span>
+                                <strong>LIVE<br>ON STAGE</strong>
+                                <small>POSTER ARTWORK TO BE ADDED</small>
+                            </div>
+                            <span class="event-poster-number">01</span>
+                        </div>
+                        <div class="event-poster-details">
+                            <div>
+                                <span class="event-status"><i aria-hidden="true"></i> DATE TO BE ANNOUNCED</span>
+                                <h3>Next event</h3>
+                                <p>Venue and ticket information will be shared with the official event poster.</p>
+                            </div>
+                            <span class="event-poster-arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </article>
+                    <div class="events-note reveal">
+                        <span class="eyebrow">STAY IN THE LOOP</span>
+                        <h3>More dates<br>coming soon.</h3>
+                        <p>Check back for new posters, confirmed show details and official ticket links.</p>
+                        <a class="live-cta" href="#contact"><span>Booking enquiries</span><i aria-hidden="true">↗</i></a>
+                    </div>
                 </div>
-
-                <a href="#" class="event-arrow">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
             </div>
+        </section>
 
-
-            <div class="event">
-
-                <div class="event-date">
-
-                    <strong>02</strong>
-                    <span>NOV</span>
-
+        <section class="contact section" id="contact" aria-labelledby="contact-title">
+            <div class="section-shell contact-shell">
+                <div class="section-head reveal">
+                    <span class="section-index">05 / SAY HELLO</span>
+                    <span class="section-aside">Bookings · Collaborations · Press</span>
                 </div>
-
-                <div class="event-info">
-
-                    <span>GUEST PERFORMANCE</span>
-
-                    <h3>
-                        Youth Music Night
-                    </h3>
-
-                    <p>
-                        Nelum Pokuna, Colombo
-                    </p>
-
+                <div class="contact-main reveal">
+                    <span class="eyebrow">FOR BOOKING & GENERAL ENQUIRIES</span>
+                    <h2 id="contact-title">Let’s make<br><em>something move.</em></h2>
+                    <p>Official management and booking contact details will be published here once confirmed.</p>
+                    <button class="contact-button" id="bookingLink" type="button" disabled aria-describedby="bookingNote">
+                        Booking contact to be announced <span aria-hidden="true">↗</span>
+                    </button>
+                    <span class="contact-note" id="bookingNote">Replace with a verified booking or management email.</span>
                 </div>
-
-                <a href="#" class="event-arrow">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
-            </div>
-
-
-            <div class="event">
-
-                <div class="event-date">
-
-                    <strong>15</strong>
-                    <span>DEC</span>
-
+                <div class="contact-bottom reveal">
+                    <span>JANIRU KAVINDA / SRI LANKA</span>
+                    <a href="#home">Back to the beginning ↑</a>
+                    <span>© <span id="currentYear">2026</span> JANIRU KAVINDA</span>
                 </div>
-
-                <div class="event-info">
-
-                    <span>LIVE PERFORMANCE</span>
-
-                    <h3>
-                        Christmas Special
-                    </h3>
-
-                    <p>
-                        Negombo, Sri Lanka
-                    </p>
-
-                </div>
-
-                <a href="#" class="event-arrow">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
             </div>
+        </section>
+    </main>
 
-        </div>
+    <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+        <button class="lightbox-close" type="button" aria-label="Close image preview">CLOSE <span aria-hidden="true">×</span></button>
+        <img class="lightbox-image" id="lightboxImage" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </dialog>
 
-    </div>
+    <div class="custom-cursor" aria-hidden="true"><span></span></div>
 
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact section" id="contact">
-
-    <div class="container">
-
-        <div class="contact-box">
-
-            <div class="contact-content">
-
-                <span class="eyebrow">
-                    06 — CONTACT
-                </span>
-
-                <h2>
-                    Let's create
-                    <em>something.</em>
-                </h2>
-
-                <p>
-                    For bookings, collaborations,
-                    performances and media inquiries.
-                </p>
-
-                <a href="mailto:hello@artist.com"
-                   class="email-link">
-
-                    hello@artist.com
-
-                    <i class="ri-arrow-right-up-line"></i>
-
-                </a>
-
-            </div>
-
-
-            <div class="contact-social">
-
-                <a href="#">
-                    Instagram
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
-                <a href="#">
-                    YouTube
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
-                <a href="#">
-                    TikTok
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
-                <a href="#">
-                    Facebook
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container footer-inner">
-
-        <div class="footer-logo">
-            AR.
-        </div>
-
-        <p>
-            © 2026 Artist Name.
-            All rights reserved.
-        </p>
-
-        <a href="#home">
-            Back to top
-            <i class="ri-arrow-up-line"></i>
-        </a>
-
-    </div>
-
-</footer>
-
-
-<script src="js/main.js"></script>
-
+    <script src="js/main.js" defer></script>
 </body>
 </html>
