@@ -2593,11 +2593,16 @@ button:focus-visible {
   font-size: 10px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  cursor: not-allowed;
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
 }
 .contact-button span {
   color: #921928;
   font-size: 15px;
+}
+.contact-button:hover, .contact-button:focus-visible {
+  border-color: #921928;
+  background: rgba(146, 25, 40, 0.1);
+  color: #f0ece4;
 }
 
 .contact-note {

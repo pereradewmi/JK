@@ -3094,11 +3094,18 @@ button:focus-visible {
     font-size: 10px;
     letter-spacing: 0.11em;
     text-transform: uppercase;
-    cursor: not-allowed;
+    transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
 
     span {
         color: $accent;
         font-size: 15px;
+    }
+
+    &:hover,
+    &:focus-visible {
+        border-color: $accent;
+        background: rgba(146, 25, 40, 0.1);
+        color: $cream;
     }
 }
 
