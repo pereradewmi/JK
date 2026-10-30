@@ -21,7 +21,7 @@ After editing SCSS, compile the stylesheet with Dart Sass:
 
 ```bash
 npm install -g sass
-sass scss/style.scss css/style.css
+sass --no-source-map scss/style.scss css/style.css
 ```
 
 ## Replace the placeholders
@@ -41,4 +41,6 @@ Scroll reveals use the browser's IntersectionObserver API and CSS, with no anima
 
 ## Deployment
 
-Deploy `index.html`, `css/`, `js/`, and `scss/` to any static host. No compilation is required at deployment time when the compiled `css/style.css` is up to date.
+Deploy `index.html`, `css/style.css`, `js/`, and the required `assets/` directories to any static host. Do not publish `scss/` or source maps; they are not needed to run the site. No compilation is required at deployment time when the compiled `css/style.css` is up to date.
+
+This only avoids exposing the original SCSS and CSS mappings. The HTML, compiled CSS, and JavaScript sent to visitors remain viewable in browser developer tools; do not put secrets or confidential logic in them.

@@ -1524,6 +1524,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 body::before {
   z-index: -1;
@@ -2767,8 +2770,8 @@ button:focus-visible {
   .menu-btn {
     position: relative;
     z-index: 202;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2795,13 +2798,14 @@ button:focus-visible {
     inset: 0;
     z-index: 201;
     width: 100%;
+    height: 100vh;
     height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: clamp(17px, 4vh, 29px);
-    padding: 90px var(--page-gutter) 40px;
+    padding: calc(90px + env(safe-area-inset-top)) var(--page-gutter) calc(40px + env(safe-area-inset-bottom));
     overflow-y: auto;
     background: radial-gradient(ellipse at 80% 30%, rgba(146, 25, 40, 0.2), transparent 40%), #090909;
     opacity: 0;
@@ -2816,11 +2820,13 @@ button:focus-visible {
     transform: translateY(0);
   }
   .nav-menu .nav-link {
+    padding: 10px 0;
     font-size: clamp(27px, 8vw, 42px);
     letter-spacing: -0.04em;
     text-transform: none;
   }
   .nav-menu .nav-contact {
+    min-height: 44px;
     margin-top: 12px;
   }
   .hero {
@@ -2871,7 +2877,7 @@ button:focus-visible {
   .scroll-cue {
     right: var(--page-gutter);
     bottom: 28px;
-    font-size: 7px;
+    font-size: 8px;
   }
   .hero-side-label {
     display: none;
@@ -2885,7 +2891,7 @@ button:focus-visible {
   }
   .section-index,
   .section-aside {
-    font-size: 7px;
+    font-size: 8px;
     letter-spacing: 0.12em;
   }
   .release-layout {
@@ -2969,7 +2975,7 @@ button:focus-visible {
   }
   .contact-bottom {
     flex-wrap: wrap;
-    font-size: 7px;
+    font-size: 8px;
   }
   .contact-bottom > * {
     width: calc(50% - 10px);
@@ -2989,7 +2995,7 @@ button:focus-visible {
     --page-gutter: 19px;
   }
   .hero-title {
-    font-size: clamp(70px, 17.8vw, 88px);
+    font-size: clamp(58px, 17.8vw, 88px);
   }
   .hero-bottom {
     grid-template-columns: 1fr;
@@ -3031,5 +3037,3 @@ button:focus-visible {
     animation: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
