@@ -41,6 +41,8 @@ Scroll reveals use the browser's IntersectionObserver API and CSS, with no anima
 
 ## Deployment
 
-Deploy `index.html`, `css/style.css`, `js/`, and the required `assets/` directories to any static host. Do not publish `scss/` or source maps; they are not needed to run the site. No compilation is required at deployment time when the compiled `css/style.css` is up to date.
+Deploy `index.html`, `css/style.css`, `js/`, `robots.txt`, `sitemap.xml`, and the required `assets/` directories to any static host. Do not publish `scss/` or source maps; they are not needed to run the site. No compilation is required at deployment time when the compiled `css/style.css` is up to date.
+
+After deploying, submit `https://pereradewmi.github.io/JK/sitemap.xml` in Google Search Console and request indexing for the homepage. Update the canonical URL, sitemap URL, and robots.txt sitemap URL if the site address changes.
 
 This only avoids exposing the original SCSS and CSS mappings. The HTML, compiled CSS, and JavaScript sent to visitors remain viewable in browser developer tools; do not put secrets or confidential logic in them.
