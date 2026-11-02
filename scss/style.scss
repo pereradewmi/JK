@@ -3139,6 +3139,61 @@ button:focus-visible {
     }
 }
 
+.construction-notice {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: min(440px, calc(100% - 36px));
+    margin: 0;
+    padding: clamp(28px, 6vw, 48px);
+    transform: translate(-50%, -50%);
+    border: 1px solid $line;
+    background: $dark;
+    color: $white;
+    text-align: center;
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.82);
+        backdrop-filter: blur(8px);
+    }
+
+    .construction-notice-label {
+        margin-bottom: 16px;
+        color: $accent;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+    }
+
+    h2 {
+        margin-bottom: 14px;
+        font-size: clamp(24px, 6vw, 32px);
+        font-weight: 500;
+        line-height: 1.15;
+    }
+
+    #constructionMessage {
+        color: $gray;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+.construction-notice-close {
+    margin-top: 26px;
+    padding: 12px 20px;
+    border: 1px solid $accent;
+    background: $accent;
+    color: $white;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+        opacity: 0.88;
+    }
+}
+
 .lightbox {
     position: fixed;
     inset: 0;

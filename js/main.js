@@ -3,6 +3,13 @@ const navigation = document.querySelector("#navMenu");
 const header = document.querySelector(".header");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+const constructionNotice = document.querySelector("#constructionNotice");
+const constructionClose = document.querySelector("#constructionClose");
+if (constructionNotice instanceof HTMLDialogElement) {
+    constructionNotice.showModal();
+    constructionClose?.addEventListener("click", () => constructionNotice.close());
+}
+
 const pageLoader = document.querySelector("#pageLoader");
 if (pageLoader) {
     const loaderStartedAt = performance.now();
