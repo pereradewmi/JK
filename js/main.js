@@ -3,6 +3,20 @@ const navigation = document.querySelector("#navMenu");
 const header = document.querySelector(".header");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+document.addEventListener("click", event => {
+    const target = event.target;
+    const link = target instanceof Element
+        ? target.closest("[data-ga-event]")
+        : null;
+    if (!(link instanceof HTMLAnchorElement) || typeof window.gtag !== "function") return;
+
+    window.gtag("event", link.dataset.gaEvent, {
+        event_category: "engagement",
+        event_label: link.dataset.gaLabel || link.textContent.trim(),
+        link_url: link.href
+    });
+});
+
 const constructionNotice = document.querySelector("#constructionNotice");
 const constructionClose = document.querySelector("#constructionClose");
 if (constructionNotice instanceof HTMLDialogElement) {

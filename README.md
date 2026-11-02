@@ -45,4 +45,8 @@ Deploy `index.html`, `css/style.css`, `js/`, `robots.txt`, `sitemap.xml`, and th
 
 After deploying, submit `https://pereradewmi.github.io/JK/sitemap.xml` in Google Search Console and request indexing for the homepage. Update the canonical URL, sitemap URL, and robots.txt sitemap URL if the site address changes.
 
+## Analytics
+
+The configured GA4 property tracks `music_click`, `video_search_click`, `music_platform_click`, `booking_click`, and `social_profile_click` events for the corresponding homepage links. Verify them in the GA4 Realtime or DebugView reports after publishing. Mark `booking_click` as a key event in GA4 if booking enquiries are a conversion goal.
+
 This only avoids exposing the original SCSS and CSS mappings. The HTML, compiled CSS, and JavaScript sent to visitors remain viewable in browser developer tools; do not put secrets or confidential logic in them.

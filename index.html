@@ -83,10 +83,15 @@
                 </h1>
                 <div class="hero-bottom">
                     <p class="hero-note">A space for the sound,<br>the story and everything between.</p>
-                    <a class="hero-cta" href="#music">
-                        <span class="hero-cta-icon" aria-hidden="true">↓</span>
-                        <span>Enter the world</span>
-                    </a>
+                    <div class="hero-actions">
+                        <a class="hero-cta" href="#music" data-ga-event="music_click" data-ga-label="Hero explore music">
+                            <span class="hero-cta-icon" aria-hidden="true">↓</span>
+                            <span>Explore Music</span>
+                        </a>
+                        <a class="hero-performance-link" href="https://www.youtube.com/results?search_query=janiru+kavinda" target="_blank" rel="noopener noreferrer" data-ga-event="video_search_click" data-ga-label="YouTube performances">
+                            Find performances on YouTube <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
                     <span class="hero-image-note">Janiru Kavinda · Sri Lanka</span>
                 </div>
             </div>
@@ -134,9 +139,9 @@
                             <span>RELEASE DATE <strong>To be announced</strong></span>
                         </div>
                         <div class="platform-links" aria-label="Find Janiru Kavinda on music platforms">
-                            <a href="https://open.spotify.com/search/Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">Spotify <span aria-hidden="true">↗</span></a>
-                            <a href="https://music.youtube.com/search?q=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">YouTube Music <span aria-hidden="true">↗</span></a>
-                            <a href="https://music.apple.com/search?term=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer">Apple Music <span aria-hidden="true">↗</span></a>
+                            <a href="https://open.spotify.com/search/Janiru%20Kavinda" target="_blank" rel="noopener noreferrer" data-ga-event="music_platform_click" data-ga-label="Spotify">Spotify <span aria-hidden="true">↗</span></a>
+                            <a href="https://music.youtube.com/search?q=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer" data-ga-event="music_platform_click" data-ga-label="YouTube Music">YouTube Music <span aria-hidden="true">↗</span></a>
+                            <a href="https://music.apple.com/search?term=Janiru%20Kavinda" target="_blank" rel="noopener noreferrer" data-ga-event="music_platform_click" data-ga-label="Apple Music">Apple Music <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
                 </div>
@@ -193,8 +198,7 @@
                     <div class="story-copy reveal">
                         <span class="eyebrow">JANIRU KAVINDA / SRI LANKA</span>
                         <h2 id="story-title">Every voice<br>has a <em>beginning.</em></h2>
-                        <p class="story-lead">The story is still being written. This space is reserved for Janiru's own words.</p>
-                        <p class="story-placeholder">Add an approved first-person biography, musical influences and personal journey here. No career milestones or personal details are published until confirmed by the artist.</p>
+                        <p class="story-lead">Janiru Kavinda is a singer from Sri Lanka. Explore his music, visuals and updates here.</p>
                         <a class="text-link" href="#contact">Share your story <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
@@ -245,7 +249,7 @@
                         <span class="eyebrow">STAY IN THE LOOP</span>
                         <h3>More dates<br>coming soon.</h3>
                         <p>Check back for new posters, confirmed show details and official ticket links.</p>
-                        <a class="live-cta" href="https://wa.me/94783459930?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20booking%20Janiru%20Kavinda." target="_blank" rel="noopener noreferrer"><span>Booking enquiries</span><i aria-hidden="true">↗</i></a>
+                        <a class="live-cta" href="https://wa.me/94783459930?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20booking%20Janiru%20Kavinda." target="_blank" rel="noopener noreferrer" data-ga-event="booking_click" data-ga-label="Events booking enquiries"><span>Booking enquiries</span><i aria-hidden="true">↗</i></a>
                     </div>
                 </div>
             </div>
@@ -261,7 +265,7 @@
                     <span class="eyebrow">FOR BOOKING & GENERAL ENQUIRIES</span>
                     <h2 id="contact-title">Let’s make<br><em>something move.</em></h2>
                     <p>For bookings and general enquiries, contact Janiru Kavinda on WhatsApp.</p>
-                    <a class="contact-button" id="bookingLink" href="https://wa.me/94783459930?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20booking%20Janiru%20Kavinda." target="_blank" rel="noopener noreferrer" aria-describedby="bookingNote">
+                    <a class="contact-button" id="bookingLink" href="https://wa.me/94783459930?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20booking%20Janiru%20Kavinda." target="_blank" rel="noopener noreferrer" aria-describedby="bookingNote" data-ga-event="booking_click" data-ga-label="WhatsApp booking contact">
                         WhatsApp · +94 78 345 9930 <span aria-hidden="true">↗</span>
                     </a>
                     <span class="contact-note" id="bookingNote">Opens a WhatsApp chat with the booking contact.</span>
@@ -269,6 +273,10 @@
                 <div class="contact-bottom reveal">
                     <span>JANIRU KAVINDA / SRI LANKA</span>
                     <a href="#home">Back to the beginning ↑</a>
+                    <div class="social-links" aria-label="Official social media">
+                        <a href="https://www.instagram.com/janirukavindaofficial_/" target="_blank" rel="noopener noreferrer" data-ga-event="social_profile_click" data-ga-label="Instagram">Instagram <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.facebook.com/p/Janiru-Kavinda-61593721503998/" target="_blank" rel="noopener noreferrer" data-ga-event="social_profile_click" data-ga-label="Facebook">Facebook <span aria-hidden="true">↗</span></a>
+                    </div>
                     <span>© <span id="currentYear">2026</span> JANIRU KAVINDA</span>
                 </div>
             </div>

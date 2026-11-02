@@ -1799,6 +1799,15 @@ button:focus-visible {
   line-height: 1.8;
 }
 
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
 .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -1817,6 +1826,19 @@ button:focus-visible {
   background: #921928;
   color: #090909;
   transform: translateY(4px);
+}
+
+.hero-performance-link {
+  color: rgba(240, 236, 228, 0.72);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  transition: color 0.25s ease;
+}
+.hero-performance-link span {
+  color: #921928;
+}
+.hero-performance-link:hover {
+  color: #f0ece4;
 }
 
 .hero-cta-icon {
@@ -2633,6 +2655,11 @@ button:focus-visible {
   color: #f0ece4;
 }
 
+.social-links {
+  display: flex;
+  gap: 14px;
+}
+
 .construction-notice {
   position: fixed;
   top: 50%;
@@ -2909,9 +2936,11 @@ button:focus-visible {
   .hero-note {
     font-size: 11px;
   }
-  .hero-cta {
+  .hero-actions {
     grid-column: 2;
     grid-row: 1;
+  }
+  .hero-cta {
     font-size: 8px;
     letter-spacing: 0.1em;
   }
@@ -3052,6 +3081,10 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
   .hero-cta {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .hero-actions {
     grid-column: 1;
     grid-row: auto;
   }
